@@ -1,5 +1,7 @@
 from random import randint
 
+#For this program to work, user input must start with a capital case. For example: "Rock", not "rock"
+
 def main():
 
   rounds = 3
@@ -12,34 +14,29 @@ def main():
 
     if computer == 0 and userInput =="Rock":
       print("AI Chose Rock. It's a tie")
-      print(computer)
     elif computer == 0 and userInput =="Scissors":
       print("AI Chose Rock. You Lost")
-      print(computer)
     elif computer == 0 and userInput =="Paper":
       print("AI Chose Rock. You Won")
-      print(computer)
-    
-    if computer == 1 and userInput =="Paper":
+   
+    elif computer == 1 and userInput =="Paper":
       print("AI Chose Paper. It's a tie")
-      print(computer)
     elif computer == 1 and userInput =="Scissors":
       print("AI Chose Paper. You Lost")
-      print(computer)
     elif computer == 1 and userInput =="Rock":
       print("AI Chose Paper. You Won")
-      print(computer)
 
-    if computer == 2 and userInput =="Scissors":
+    elif computer == 2 and userInput =="Scissors":
       print("AI Chose Scissors. It's a tie")
-      print(computer)
-    elif computer == 2 and userInput =="Scissors":
+    elif computer == 2 and userInput =="Paper":
       print("AI Chose Scissors. You Lost")
-      print(computer)
-    elif computer == 2 and userInput =="Scissors":
+    elif computer == 2 and userInput =="Rock":
       print("AI Chose Scissors. You Won")
-      print(computer)
+    
+    else:
+      print("error")
 
     rounds = rounds - 1
 
 main()
+
